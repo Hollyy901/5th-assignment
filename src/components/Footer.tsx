@@ -43,6 +43,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <div className="max-w-7xl mx-auto border-t border-gray-100 mt-8 pt-6 text-center text-xs text-gray-400">
+        © 2026 Dev Stack. Built with React and Tailwind CSS.
+      </div>
     </footer>
   );
 }
