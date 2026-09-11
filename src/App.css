@@ -1,2 +1,15 @@
 
   
+.brand-gradient {
+  background: linear-gradient(135deg, #ec4899 0%, #7b50dd 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, #ce5a94 0%, #7953d2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
