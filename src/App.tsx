@@ -1,14 +1,13 @@
 import Navbar from "./components/Navbar";
+import TechStack from "./components/TechStack"; 
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-
       <Navbar />
 
-      
+      {/* Your Hero Section */}
       <section className="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Column */}
         <div className="space-y-6">
           <h1 className="text-5xl font-extrabold text-gray-900 leading-tight">
             Build Your Ideal <br />
@@ -27,7 +26,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Right Column*/}
         <div className="flex justify-center">
           <img 
             src="/banner-stack.png" 
@@ -36,6 +34,10 @@ export default function App() {
           />
         </div>
       </section>
+
+      {/* 2. Render Component Directly Below Hero */}
+      <TechStack />
+
     </div>
   );
 }
