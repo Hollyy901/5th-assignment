@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <TechStack />
+      <Footer />
     </div>
   );
 }
