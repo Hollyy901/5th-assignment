@@ -4,8 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="bg-purple-600 text-white font-bold text-xs px-2 py-1 rounded">DS</span>
-            <span className="font-bold text-lg text-gray-900">Dev Stack</span>
+            <img src="/logo-text.png" alt="Dev Stack" className="h-8 w-auto" />
           </div>
           <p className="text-xs text-gray-400 max-w-sm leading-relaxed mb-4">
             Curated tools, technologies, and resources for developers building modern software.
