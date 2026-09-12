@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 interface TechItem {
   id: string;
@@ -139,12 +140,17 @@ export default function TechStack() {
   const toggleStack = (tech: TechItem) => {
     if (selectedStack.some((item) => item.id === tech.id)) {
       setSelectedStack(selectedStack.filter((item) => item.id !== tech.id));
+      toast.error(`Removed ${tech.name} from stack`);
     } else {
       setSelectedStack([...selectedStack, tech]);
+      toast.success(`Added ${tech.name} to stack!`);
     }
   };
 
-  const removeAll = () => setSelectedStack([]);
+  const removeAll = () => {
+    setSelectedStack([]);
+    toast("Stack cleared!", { icon: "🧹" });
+  };
 
   return (
     <section className="max-w-7xl mx-auto px-8 py-12">
